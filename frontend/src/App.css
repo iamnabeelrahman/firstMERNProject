@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+body {
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  margin: 0;
+  padding: 0;
+  background-image: url('./assets/tirza-van-dijk-TEYrLTKKMSg-unsplash.jpg'); /* Adjust path as needed */
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out; /* Smooth transition for background change */
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
+
+.name {
+  position: relative;
+  font-weight: bold;
+  font-size: 37px;
+  top: 40px;
+  left: 30px;
+  color: rgb(139, 139, 139);
+}
+
+.account {
+  position: relative;
+  max-width: 480px;
+  background-color: #000000af;
+  color: #d6d6d6;
+  border-radius: 10px;
+  padding: 30px 40px;
+  top: 100px;
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%);
+}
+
+.account h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.account .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border: 1px solid rgb(171, 171, 171);
+  border-radius: 40px;
+  font-size: 1rem;
+  color: #c7c7c7;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+  color: #f7f6f6;
+  font-weight: bold;
+}
+
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 30%;
+  transform: translate(-20%);
+  font-size: 1.3rem;
+}
+
+.account .btn {
+  width: 100%;
+  height: 45px;
+  background-color: rgb(211, 211, 211);
+  border: none;
+  outline: none;
+  border-radius: 45px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  color: #2d2d2d;
+  font-weight: 600;
+  transition: background-color 0.8s;
+}
+
+.account .btn:hover {
+  color: whitesmoke;
+  background-color: rgb(137, 46, 46);
+  cursor: pointer;
+  transition: background-color 0.7s;
+}
+
+.account .register {
+  font-size: 1rem;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.register p a {
+  color: rgb(225, 225, 225);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register p a:hover {
+  text-decoration: underline;
+  color: rgb(189, 121, 121);
+}
+
+@media (max-width: 700px) {
+  .account {
+      width: 345px;
+  }
+
+  .input-box input {
+      width: 80%;
+      height: 80%;
+      margin-left: 20px;
+  }
+
+  .input-box i {
+      position: absolute;
+      right: 10px;
+      top: 25%;
+      transform: translate(-250%);
+      font-size: 1.1rem;
+  }
+}
