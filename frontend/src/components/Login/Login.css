@@ -1,0 +1,105 @@
+/* src/components/Login/Login.css */
+body {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
+.login-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../../assets/tirza-van-dijk-TEYrLTKKMSg-unsplash.jpg"); /* Adjust path if necessary */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.login-card {
+  position: absolute;
+  bottom: 10vh;
+  right: 10vw;
+  max-width: 480px;
+  background-color: #000000af;
+  color: #d6d6d6;
+  border-radius: 10px;
+  padding: 30px 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-card h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 12vw;
+  height: 2vh;
+  background-color: transparent;
+  border: 1px solid rgb(171, 171, 171);
+  border-radius: 28px;
+  font-size: small;
+  color: #c7c7c7;
+  padding: 20px 50px;
+}
+
+.input-box input::placeholder {
+  color: #f7f6f6;
+  font-weight: bold;
+}
+
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.3rem;
+}
+
+.btn {
+  width: 100%;
+  height: 45px;
+  background-color: rgb(211, 211, 211);
+  border: none;
+  border-radius: 45px;
+  font-size: 1rem;
+  color: #2d2d2d;
+  font-weight: 600;
+  transition: background-color 0.8s;
+}
+
+.btn:hover {
+  background-color: rgb(137, 46, 46);
+  color: white;
+  cursor: pointer;
+}
+
+.register {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.register a {
+  color: rgb(225, 225, 225);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register a:hover {
+  text-decoration: underline;
+  color: rgb(189, 121, 121);
+}
+
+@media (max-width: 700px) {
+  .login-card {
+    width: 345px;
+  }
+}
